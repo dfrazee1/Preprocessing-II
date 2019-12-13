@@ -1,5 +1,13 @@
 .home {
 
+  header{
+    div{
+      padding-top:3%;
+      border-bottom:1px dashed black;
+
+    }
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -56,6 +64,48 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn{
+        .button(teal, 95%, white);
+        padding-top:5%;
+        text-align: center;
+      }
+    }
+  }
+  @media @mobile{
+    width:95%;
+    padding: 0 6%;
+    .content-section{
+      flex-direction: column;
+      .text-content{
+        width:100%;
+      }
+      .img-content{
+        width:100%;
+      }
+    }
+    .inverse-content{
+      flex-direction:column-reverse;
+    }
+    .content-destination{
+      width:100%;
+      
+    }
+    .content-pick{
+      padding: 3% 8%;
+      flex-direction:column;
+      .destination{
+        width:100%;
+        h4{
+
+        }
+        p{
+          
+        }
+        .btn{
+          padding-top:3%;
+        }
+      }
     }
   }
 }// home
